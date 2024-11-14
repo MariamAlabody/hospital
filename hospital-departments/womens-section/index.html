@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إدارة قسم النساء</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <section id="women-department" class="admin-section">
+        <div class="container">
+            <header class="section-header">
+                <h2>إدارة قسم النساء</h2>
+                <p>إدارة الأنشطة الإدارية لقسم النساء، من تخصيص المهام إلى متابعة التقارير.</p>
+            </header>
+
+            <div class="department-details">
+                <div class="department-item">
+                    <h3>المسؤولون</h3>
+                    <ul>
+                        <li><strong>المدير:</strong> د. فاطمة الزهراء</li>
+                        <li><strong>الموظف المسؤول عن التنسيق:</strong> أحمد علي</li>
+                        <li><strong>الموظف المسؤول عن التقارير:</strong> سارة محمد</li>
+                    </ul>
+                </div>
+
+                <div class="department-item">
+                    <h3>المهام الحالية</h3>
+                    <ul id="task-list">
+                        <!-- المهام ستظهر هنا -->
+                    </ul>
+                </div>
+            </div>
+
+            <button class="btn-update" onclick="showTaskForm()">إضافة مهمة جديدة</button>
+
+            <div id="task-form" class="task-form">
+                <label for="task-title">عنوان المهمة:</label>
+                <input type="text" id="task-title" placeholder="أدخل عنوان المهمة">
+                <button onclick="addTask()">إضافة المهمة</button>
+                <button onclick="hideTaskForm()">إلغاء</button>
+            </div>
+
+            <!-- إضافة تقرير -->
+            <div class="report-upload">
+                <h3>رفع تقرير من الموظفين</h3>
+                <form action="#" method="POST" enctype="multipart/form-data">
+                    <label for="employee-name">اسم الموظف:</label>
+                    <input type="text" id="employee-name" placeholder="أدخل اسم الموظف" required>
+
+                    <label for="report-description">وصف التقرير:</label>
+                    <textarea id="report-description" placeholder="أدخل وصف التقرير" required></textarea>
+
+                    <label for="report-file">تحميل التقرير:</label>
+                    <input type="file" id="report-file" name="report-file" required>
+
+                    <button type="submit">رفع التقرير</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

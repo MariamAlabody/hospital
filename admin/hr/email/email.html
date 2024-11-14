@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إدارة البريد الإلكتروني للموارد البشرية</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="email.css">
+</head>
+<body>
+
+    <!-- الهيدر -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="hr-department.html">الموارد البشرية</a></li>
+                <li><a href="email.html">البريد الإلكتروني</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- محتوى الصفحة -->
+    <div class="container">
+        <h2>إدارة البريد الإلكتروني للموارد البشرية</h2>
+
+        <!-- قسم إرسال بريد جديد -->
+        <div id="send-email-section">
+            <h3>إرسال بريد جديد</h3>
+            <form id="send-email-form">
+                <label for="to-email">إلى:</label>
+                <input type="email" id="to-email" required>
+
+                <label for="subject">الموضوع:</label>
+                <input type="text" id="subject" required>
+
+                <label for="message">الرسالة:</label>
+                <textarea id="message" required></textarea>
+
+                <button type="submit">إرسال</button>
+            </form>
+        </div>
+
+        <!-- قسم البحث -->
+        <div id="search-section">
+            <label for="search-input">البحث:</label>
+            <input type="text" id="search-input" placeholder="ابحث في الموضوع أو المرسل">
+            <button type="button" onclick="searchEmails()">بحث</button>
+        </div>
+
+        <!-- صندوق الوارد -->
+        <div id="inbox-section">
+            <h3>صندوق الوارد</h3>
+            <table id="inbox-table">
+                <thead>
+                    <tr>
+                        <th>الموضوع</th>
+                        <th>من</th>
+                        <th>تاريخ الاستلام</th>
+                        <th>الإجراءات</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- سيتم إضافة الرسائل هنا باستخدام جافا سكربت -->
+                </tbody>
+            </table>
+        </div>
+<!-- صندوق الوارد -->
+<div id="inbox-section">
+    <h3>صندوق الوارد</h3>
+    <table id="inbox-table">
+        <thead>
+            <tr>
+                <th>الموضوع</th>
+                <th>من</th>
+                <th>تاريخ الاستلام</th>
+                <th>الإجراءات</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- سيتم إضافة الرسائل هنا باستخدام جافا سكربت -->
+        </tbody>
+    </table>
+</div>
+
+        <!-- قسم الأرشيف -->
+        <div id="archive-section">
+            <h3>الأرشيف</h3>
+            <table id="archive-table">
+                <thead>
+                    <tr>
+                        <th>الموضوع</th>
+                        <th>من</th>
+                        <th>تاريخ الأرشفة</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- سيتم إضافة الرسائل المؤرشفة هنا -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="email.js"></script>
+</body>
+</html>

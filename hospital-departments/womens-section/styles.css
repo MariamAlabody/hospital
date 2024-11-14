@@ -1,0 +1,182 @@
+/* إعادة تصميم الصفحة باستخدام flexbox و grid */
+html, body {
+  height: 100%;
+  margin: 0;
+  direction: rtl;
+  font-family: 'Arial', sans-serif;
+}
+
+.admin-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #4284e7;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* حاوية رئيسية */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* العنوان الرئيسي */
+.section-header h2 {
+  font-size: 30px;
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.section-header p {
+  font-size: 18px;
+  color: #555;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* تصميم التفاصيل */
+.department-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* تنسيق العناصر داخل التفاصيل */
+.department-item {
+  background-color: #cbd8e2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.department-item h3 {
+  font-size: 22px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.department-item ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.department-item ul li {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* زر إضافة مهمة جديدة */
+.btn-update {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 20px auto;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.btn-update:hover {
+  background-color: #0056b3;
+}
+
+/* نموذج إضافة المهمة */
+.task-form {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.task-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.task-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.task-form button:hover {
+  background-color: #0056b3;
+}
+
+.task-form button:nth-child(2) {
+  background-color: #f44336;
+}
+
+.task-form button:nth-child(2):hover {
+  background-color: #d32f2f;
+}
+
+/* تنسيق رفع التقرير */
+.report-upload {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.report-upload form {
+  display: flex;
+  flex-direction: column;
+}
+
+.report-upload label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.report-upload input[type="text"], 
+.report-upload textarea, 
+.report-upload input[type="file"] {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.report-upload button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.report-upload button:hover {
+  background-color: #0056b3;
+}

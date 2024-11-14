@@ -1,0 +1,71 @@
+Folder PATH listing for volume New Volume
+Volume serial number is 2E70-DE96
+D:.
+|   file_structure.txt
+|   index.html
+|   styles.css
+|   
+\---admin
+    |   administration.html
+    |   git
+    |   script.js
+    |   style-adminisation.css
+    |   
+    +---employee-information
+    |       admin-information.html
+    |       cleaning-staff-information.html
+    |       doctor-information.css
+    |       doctor-information.html
+    |       employee-information.css
+    |       employee-information.html
+    |       nurse-information.html
+    |       technical-staff-information.html
+    |       
+    +---Health-professions
+    +---hr
+    |   |   hr-department.css
+    |   |   hr-department.html
+    |   |   
+    |   +---email
+    |   |       email.css
+    |   |       email.html
+    |   |       email.js
+    |   |       
+    |   +---identity
+    |   |       identis.js
+    |   |       identit.css
+    |   |       identity.html
+    |   |       
+    |   +---incoming
+    |   |   |   incoming.css
+    |   |   |   incoming.html
+    |   |   |   
+    |   |   +---books-supply
+    |   |   |       books-supply.css
+    |   |   |       books-supply.html
+    |   |   |       
+    |   |   +---incoing-emails
+    |   |   |       incoing-emails.css
+    |   |   |       incoing-emails.html
+    |   |   |       
+    |   |   +---incoming-documents
+    |   |   |       incoming-documents.css
+    |   |   |       incoming-documents.html
+    |   |   |       
+    |   |   \---incoming-requests
+    |   |           incoming-request-ssuccess.html
+    |   |           incoming-requests.css
+    |   |           incoming-requests.html
+    |   |           incoming-requests.js
+    |   |           
+    |   +---issued
+    |   |       issued.css
+    |   |       issued.html
+    |   |       issued.js
+    |   |       
+    |   +---leaves
+    |   \---promotions
+    \---login
+            login.css
+            login.html
+            
